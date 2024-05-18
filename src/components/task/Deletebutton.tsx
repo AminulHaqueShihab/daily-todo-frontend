@@ -32,6 +32,7 @@ const Deletebutton: FC<DeletebuttonProps> = ({ id }) => {
 					<Tooltip hasArrow label='Delete Task'>
 						<span>
 							<IconButton
+								isLoading={result.isLoading}
 								aria-label='icon'
 								colorScheme='red'
 								icon={<FaTrash />}

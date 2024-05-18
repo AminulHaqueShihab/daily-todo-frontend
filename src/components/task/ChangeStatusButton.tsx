@@ -41,6 +41,7 @@ const ChangeStatusButton: FC<ChangeStatusButtonProps> = ({ id, status }) => {
 				<Tooltip label={isCompleted ? 'Mark Pending' : 'Mark Completed'}>
 					<span>
 						<IconButton
+							isLoading={result.isLoading}
 							aria-label='icon'
 							icon={isCompleted ? <TiTick /> : <MdOutlinePendingActions />}
 						/>
