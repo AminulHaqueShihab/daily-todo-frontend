@@ -67,7 +67,7 @@ const SigninPage: FC<SigninPageProps> = ({}) => {
 							type='password'
 						/>
 					</InputField>
-					<Button colorScheme='purple' type='submit'>
+					<Button isLoading={result.isLoading} colorScheme='purple' type='submit'>
 						Sign In
 					</Button>
 					<BodyText>

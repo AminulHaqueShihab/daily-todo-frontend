@@ -96,7 +96,11 @@ const SignupPage: FC<SignupPageProps> = ({}) => {
 							type='password'
 						/>
 					</InputField>
-					<Button colorScheme='purple' type='submit'>
+					<Button
+						isLoading={result.isLoading}
+						colorScheme='purple'
+						type='submit'
+					>
 						Sign Up
 					</Button>
 					<BodyText>
